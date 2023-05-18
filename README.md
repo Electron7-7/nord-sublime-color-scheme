@@ -1,0 +1,1 @@
+The Nord palette as a simple color scheme for Sublime Text 4

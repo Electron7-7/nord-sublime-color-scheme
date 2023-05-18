@@ -1,0 +1,265 @@
+{
+	"variables":
+	{
+		"nord0": "#2E3440",
+		"nord1": "#3B4252",
+		"nord2": "#434C5E",
+		"nord3": "#4C566A",
+		"nord4": "#D8DEE9",
+		"nord5": "#E5E9F0",
+		"nord6": "#ECEFF4",
+		"nord7": "#8FBCBB",
+		"nord8": "#88C0D0",
+		"nord9": "#81A1C1",
+		"nord10": "#5E81AC",
+		"nord11": "#BF616A",
+		"nord12": "#D08770",
+		"nord13": "#EBCB8B",
+		"nord14": "#A3BE8C",
+		"nord15": "#B48EAD"
+	},
+	"globals":
+	{
+		"foreground": "var(nord6)",
+		"background": "var(nord0)",
+		"caret": "var(nord4)",
+		"block_caret": "var(nord4)",
+		"block_caret_border": "var(nord4)",
+		"block_caret_underline": "var(nord4)",
+		"block_caret_corner_style": "square",
+		"line_highlight": "color( var(nord2) alpha(0.5) )",
+		"selection": "var(nord2)",
+		"selection_border": "var(nord3)",
+		"inactive_selection": "var(nord1)",
+		"misspelling": "var(nord11)",
+		"shadow": "",
+		"active_guide": "var(nord9)",
+		"stack_guide": "var(nord3)",
+		"highlight": "var(nord5)",
+		"find_highlight_foreground": "var(nord9)",
+		"find_highlight": "var(nord6)",
+		"brackets_options": "underline",
+		"brackets_foreground": "var(nord8)",
+		"brackets_contents_options": "underline",
+		"brackets_contents_foreground": "var(nord4)",
+		"tags": "stippled_underline",
+		"tags_foreground": "var(nord5)",
+	},
+	"rules":
+	[
+		{
+			"name": "Comment",
+			"scope": "comment, punctuation.definition.comment",
+			"foreground": "var(nord3)"
+		},
+		{
+			"name": "String",
+			"scope": "string",
+			"foreground": "var(nord14)"
+		},
+		{
+			"name": "Punctuation",
+			"scope": "punctuation.definition - punctuation.definition.numeric.base",
+			"foreground": "var(nord9)"
+		},
+		{
+			"name": "Number",
+			"scope": "constant.numeric",
+			"foreground": "var(nord15)"
+		},
+		{
+			"name": "Number Suffix",
+			"scope": "storage.type.numeric",
+			"foreground": "var(nord12)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Built-in constant",
+			"scope": "constant.language",
+			"foreground": "var(nord4)",
+			"font_style": "italic"
+		},
+		{
+			"name": "User-defined constant",
+			"scope": "constant.character, constant.other",
+			"foreground": "var(nord5)"
+		},
+		{
+			"name": "Keyword",
+			"scope": "keyword - keyword.operator, keyword.operator.word",
+			"foreground": "var(nord9)"
+		},
+		{
+			"name": "Operators",
+			"scope": "keyword.operator",
+			"foreground": "var(nord9)"
+		},
+		{
+			"name": "Punctuation",
+			"scope": "punctuation.separator, punctuation.terminator",
+			"foreground": "var(nord9)"
+		},
+		{
+			"name": "Punctuation",
+			"scope": "punctuation.section",
+			"foreground": "var(nord9)"
+		},
+		{
+			"name": "Accessor",
+			"scope": "punctuation.accessor",
+			"foreground": "var(nord9)"
+		},
+		{
+			"name": "Annotation Punctuation",
+			"scope": "punctuation.definition.annotation",
+			"foreground": "var(nord9)"
+		},
+		{
+			"name": "JavaScript Dollar",
+			"scope": "variable.other.dollar.only.js, variable.other.object.dollar.only.js, variable.type.dollar.only.js, support.class.dollar.only.js",
+			"foreground": "var(nord10)"
+		},
+		{
+			"name": "Storage",
+			"scope": "storage",
+			"foreground": "var(nord7)"
+		},
+		{
+			"name": "Storage type",
+			"scope": "storage.type",
+			"foreground": "var(nord7)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Entity name",
+			"scope": "entity.name.function",
+			"foreground": "var(nord9)"
+		},
+		{
+			"name": "Entity name",
+			"scope": "entity.name - (entity.name.section | entity.name.tag | entity.name.label)",
+			"foreground": "var(nord12)"
+		},
+		{
+			"name": "Inherited class",
+			"scope": "entity.other.inherited-class",
+			"foreground": "var(nord7)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Function argument",
+			"scope": "variable.parameter",
+			"foreground": "var(nord9)"
+		},
+		{
+			"name": "Language variable",
+			"scope": "variable.language",
+			"foreground": "var(nord9)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Tag name",
+			"scope": "entity.name.tag",
+			"foreground": "var(nord9)"
+		},
+		{
+			"name": "Tag attribute",
+			"scope": "entity.other.attribute-name",
+			"foreground": "var(nord9)"
+		},
+		{
+			"name": "Function call",
+			"scope": "variable.function, variable.annotation",
+			"foreground": "var(nord8)"
+		},
+		{
+			"name": "Library function",
+			"scope": "support.function, support.macro",
+			"foreground": "var(nord8)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Library constant",
+			"scope": "support.constant",
+			"foreground": "var(nord4)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Library class/type",
+			"scope": "support.type, support.class",
+			"foreground": "var(nord7)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Invalid",
+			"scope": "invalid",
+			"foreground": "var(nord5)",
+			"background": "var(nord11)"
+		},
+		{
+			"name": "Invalid deprecated",
+			"scope": "invalid.deprecated",
+			"foreground": "var(nord5)",
+			"background": "var(nord12)"
+		},
+		{
+			"name": "markup headings",
+			"scope": "markup.heading",
+			"font_style": "bold"
+		},
+		{
+			"name": "markup bold",
+			"scope": "markup.bold",
+			"font_style": "bold"
+		},
+		{
+			"name": "markup italic",
+			"scope": "markup.italic",
+			"font_style": "italic"
+		},
+		{
+			"name": "markup underline",
+			"scope": "markup.underline",
+			"font_style": "underline"
+		},
+		{
+			"name": "markup bold/italic",
+			"scope": "markup.italic markup.bold | markup.bold markup.italic",
+			"font_style": "bold italic"
+		},
+		{
+			"name": "markup bold/underline",
+			"scope": "markup.underline markup.bold | markup.bold markup.underline",
+			"font_style": "bold underline"
+		},
+		{
+			"name": "markup italic/underline",
+			"scope": "markup.underline markup.italic | markup.italic markup.underline",
+			"font_style": "italic underline"
+		},
+		{
+			"name": "markup bold/italic/underline",
+			"scope": "markup.bold markup.italic markup.underline | markup.bold markup.underline markup.italic | markup.italic markup.bold markup.underline | markup.italic markup.underline markup.bold | markup.underline markup.bold markup.italic | markup.underline markup.italic markup.bold",
+			"font_style": "bold italic underline"
+		},
+		{
+			"name": "diff.deleted",
+			"scope": "markup.deleted",
+			"foreground": "var(nord11)"
+		},
+		{
+			"name": "diff.inserted",
+			"scope": "markup.inserted",
+			"foreground": "var(nord14)"
+		},
+		{
+			"name": "diff.changed",
+			"scope": "markup.changed",
+			"foreground": "var(nord13)"
+		},
+		{
+			"scope": "message.error",
+			"foreground": "var(nord11)"
+		},
+	]
+}
